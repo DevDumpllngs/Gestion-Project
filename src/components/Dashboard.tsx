@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { Bell, Plus, Search, CreditCard } from 'lucide-react';
 import { useState } from 'react';
+import profileImage from '../assets/profile.jpeg'; 
 
 const monthlyData = [
   { month: 'Jan', amount: 11000, color: '#8B5CF6' },
@@ -77,13 +78,13 @@ const Dashboard = () => {
           <Bell className="w-6 h-6 text-gray-500 hover:text-blue-600 transition" />
           <div className="flex items-center gap-3">
             <img
-              src="/api/placeholder/32/32"
+              src={profileImage}
               alt="Profile"
               className="w-10 h-10 rounded-full ring-2 ring-blue-200"
             />
             <div className="text-sm">
-              <p className="font-semibold text-gray-800">Sajib Das Supriyo</p>
-              <p className="text-gray-500 text-xs">Sajibdasbp@gmail.com</p>
+              <p className="font-semibold text-gray-800">Dumpllngs</p>
+              <p className="text-gray-500 text-xs">dump00p@gmail.com</p>
             </div>
           </div>
         </div>
@@ -216,7 +217,7 @@ const Dashboard = () => {
                   </div>
                 </div>
                 <div style={{ transform: 'translateZ(50px)' }}>
-                  <p className="text-lg mb-2 text-white font-semibold">Sajib Das Supriyo</p>
+                  <p className="text-lg mb-2 text-white font-semibold">Esteban BM</p>
                   <p className="text-sm text-white/80 tracking-widest">**** **** **** 3728</p>
                   <div className="flex justify-between mt-4">
                     <p className="text-xs text-white/70">Exp 02/30</p>

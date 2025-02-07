@@ -10,6 +10,7 @@ import {
   LogOut 
 } from "lucide-react";
 import Swal from 'sweetalert2';
+import logo from '../assets/logo.webp'
 
 const handleLogout = () => {
   Swal.fire({
@@ -60,7 +61,7 @@ const Sidebar = () => {
     >
       <div className="flex flex-col items-center mb-8">
         <img 
-          src="../assets/logo.webp" 
+          src={logo}
           alt="DumpYugen Logo" 
           className="w-20 h-20 mb-2 rounded-full shadow-lg object-cover" 
         />

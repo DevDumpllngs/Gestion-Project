@@ -15,6 +15,7 @@ import {
   AlertCircle,
 } from 'lucide-react';
 import FinancialProfileModal from '../components/FinancialProfileModal';
+import profileImage from '../assets/profile.jpeg';
 
 const ProfilePage = () => {
   // States
@@ -113,7 +114,7 @@ const ProfilePage = () => {
                 <div className="flex justify-center">
                   <div className="relative">
                     <img
-                      src={avatarPreview}
+                      src={profileImage}
                       alt="Profile"
                       className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
                     />
